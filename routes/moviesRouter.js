@@ -11,8 +11,8 @@ router.get('/', movieCtrl.index)
 // GET /movies/:id: Gets An Individual Movie
 router.get('/:id', movieCtrl.show)
 
-// GET /performers: Returns a list of all performers.
-router.get('/:movieId/performers/:performerId', movieCtrl.addPerformer)
+// POST /performers: Returns a list of all performers.
+router.post('/:movieId/performers/:performerId', movieCtrl.addPerformer)
 
 
 
